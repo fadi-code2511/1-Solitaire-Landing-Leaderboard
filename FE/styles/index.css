@@ -12,6 +12,7 @@
 }
 .homePageAnchor{
     color: aliceblue;
+    font-size: 30px;
 }
 .iphone-image{
     width: 50px;
@@ -27,8 +28,9 @@
 }
 
 .solitaire-logo{
-    width: 70px;
-    border-radius: 10%;
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
 }
 .gameImg{
     width: 400px;
@@ -36,10 +38,9 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 40%;
     align-items: center;
-    background-color: brown;
-    /* background-image:  url("../assets/images/hero-photo.jpg") ; */
+    background-image: linear-gradient(red,black);
 }
 
 .heroSection{
