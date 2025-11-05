@@ -49,10 +49,26 @@
     background-image: url(../assets/images/hero-photo.jpg);
     background-repeat: no-repeat ;
     background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
-.gameSection{
+.gameForm{
     width:fit-content;
-    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: whitesmoke; */
+}
+
+.H1gameForm{
+    color: white;
+}
+.buttonsForm{
+    width: fit-content;
+    background-color: rgb(158, 8, 8);
+
 }
