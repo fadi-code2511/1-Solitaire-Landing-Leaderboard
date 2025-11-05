@@ -33,7 +33,7 @@
     margin: 5px;
 }
 .gameImg{
-    width: 400px;
+    width: 600px;
 }
 .navbar{
     display: flex;
@@ -53,22 +53,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    filter: blur(3px);
     
 }
 
+
 .gameForm{
-    width:fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: whitesmoke; */
+     color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  
 }
 
 .H1gameForm{
     color: white;
-}
-.buttonsForm{
-    width: fit-content;
-    background-color: rgb(158, 8, 8);
-
+    margin:10px 0px;
 }
