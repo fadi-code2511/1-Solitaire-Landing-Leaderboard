@@ -53,6 +53,7 @@ button{
     justify-content: center;
     filter: blur(3px);
     
+    
 }
 
 
@@ -143,6 +144,8 @@ td{
     margin-top: 40px;
     padding: 20px;
     border: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px red;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
