@@ -17,4 +17,32 @@ function addScorePage(){
 
 iosBtn.addEventListener("click",appStore);
 andriodBtn.addEventListener("click",googlePlay);
-adding_score_btn.addEventListener("click",addScorePage)
+adding_score_btn.addEventListener("click",addScorePage);
+
+// getting data to leaderboard
+var arr=[{
+    playerName:"sam",
+    score:"45",
+    duration: "8.5"
+},
+{
+    playerName:"jouy",
+    score:"66",
+    duration: "2.5"
+}
+];
+
+var leaderboard_table=document.querySelector(".leader-board-table");
+console.log(leaderboard_table)
+
+for (var i=0 ; i<arr.length; i++){
+    console.log("he")
+    var player=arr[i];
+    leaderboard_table.innerHTML+=`
+                <tr>
+                    <td>${player.playerName}</td>
+                    <td>${player.score}</td>
+                    <td>${player.duration}</td>
+                </tr>`
+                
+}
