@@ -4,4 +4,4 @@ $user = "root";
 $pass = ""; 
 $dbname = "solitaire_db";
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+$mysqli = new mysqli($host, $user, $pass, $dbname);
