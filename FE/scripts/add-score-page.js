@@ -29,5 +29,5 @@ add_score_btn.addEventListener("click",add_result);
 
 
 // set the name to the db
-const base_url="http://localhost/assignment/tech/1-Solitaire%20Landing%20+%20Leaderboard/BE/";
+const base_url="http://localhost/assignment/tech/1-Solitaire%20Landing%20+%20Leaderboard/BE/APIs/";
 
