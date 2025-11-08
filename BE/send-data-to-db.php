@@ -1,7 +1,9 @@
 <?php
 include("connection.php");
 
-$name = $_POST['name'];
+$data=json_decode(file_get_contents("php://input"),true);
+
+$name = $data['name'];
 $score = rand(50, 200); //  random score
 $duration = rand(1, 4) . ":" . rand(0, 59); // random duration
 

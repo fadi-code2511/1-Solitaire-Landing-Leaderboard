@@ -19,30 +19,35 @@ iosBtn.addEventListener("click",appStore);
 andriodBtn.addEventListener("click",googlePlay);
 adding_score_btn.addEventListener("click",addScorePage);
 
-// getting data to leaderboard
-var arr=[{
-    playerName:"sam",
-    score:"45",
-    duration: "8.5"
-},
-{
-    playerName:"jouy",
-    score:"66",
-    duration: "2.5"
-}
-];
+
+// getting data from db with axios
+const base_url="http://localhost/assignment/tech/1-Solitaire%20Landing%20+%20Leaderboard/BE/";
+get_data();
+async function get_data() {
+    try {
+    const url= base_url+"get-data-from-leaderboard.php";
+    const response= await axios.get(url);  // await cannt work without a async
+    const data=response.data
+    console.log(data);
+    // console.log(response);
 
 var leaderboard_table=document.querySelector(".leader-board-table");
 console.log(leaderboard_table)
 
-for (var i=0 ; i<arr.length; i++){
-    console.log("he")
-    var player=arr[i];
+for (var i=0 ; i<data.length; i++){
+    var player=data[i];
     leaderboard_table.innerHTML+=`
                 <tr>
-                    <td>${player.playerName}</td>
+                    <td>${player.name}</td>
                     <td>${player.score}</td>
                     <td>${player.duration}</td>
                 </tr>`
                 
 }
+    
+} catch  {
+    console.log("Error!");
+}
+}
+
+
