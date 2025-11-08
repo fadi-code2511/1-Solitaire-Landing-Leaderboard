@@ -10,7 +10,7 @@ async function add_name(value_name) {
 try {
 const url= base_url+"send-data-to-db.php";
 const response= await axios.post(url,{
-  value_name 
+  name:value_name 
 });  // await cannt work without a async
 console.log(response);
 
